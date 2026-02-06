@@ -1,0 +1,268 @@
+#mainMiddle {
+    width: 100%;
+    height: 720px;
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 50% 1fr;
+}
+
+#mainMiddle img {
+    transition: 0.7s;
+}
+
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+#mainPics {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1 / span2;
+
+}
+
+#middle-pic-wrapper1 {
+    position: absolute;
+    left: 110px;
+    top: 100px;
+    width: 45%;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+#middle-pic-wrapper2 {
+    position: absolute;
+    left: 310px;
+    top: 240px;
+    width: 45%;
+    border-radius: 10px;
+    transition: 0.7s;
+
+}
+
+
+#middle-pic-wrapper3 {
+    position: absolute;
+    left: 110px;
+    top: 360px;
+    width: 45%;
+    border-radius: 10px;
+    transition: 0.7s;
+
+}
+
+#middle-pic-wrapper1 img:hover {
+    transform: translateY(-10px);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#middle-pic-wrapper2 img:hover {
+    transform: translateY(-10px);
+    transition: 0.7s;
+    cursor: pointer;
+
+}
+
+#middle-pic-wrapper3 img:hover {
+    transform: translateY(-10px);
+    transition: 0.7s;
+    cursor: pointer;
+
+}
+
+
+#middle-pic-wrapper1 img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#middle-pic-wrapper2 img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#middle-pic-wrapper3 img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+
+/*------------------------------------------------------------------------------------*/
+
+#middleText {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 1.5rem;
+    transition: 0.7s;
+    padding-top: 50px;
+    cursor: pointer;
+
+}
+
+#middleStatistic {
+    padding-top: 50px;
+    grid-column: 2;
+    grid-row: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    height: 150px;
+
+
+
+}
+
+#middleStatistic div {
+    transition: 0.5s;
+}
+
+#middleStatistic div:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------------------------------------------------------*/
+.LeftToRight {
+    animation: LeftToRight 1.6s backwards;
+}
+
+.RightToLeft {
+    animation: RightToLeft 1.6s backwards;
+}
+
+.slideBottomToTop {
+    animation: SlideBottomToTop 2s forwards;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+@media(max-width:1024px) {
+    #middle-pic-wrapper1 {
+        top: 130px;
+        left: 50px;
+        width: 50%;
+    }
+
+    #middle-pic-wrapper2 {
+        left: 200px;
+        top: 250px;
+        width: 50%;
+    }
+
+    #middle-pic-wrapper3 {
+        left: 50px;
+        top: 350px;
+        width: 50%;
+    }
+
+}
+
+@media(max-width:768px) {
+    #mainMiddle {
+        height: 820px;
+    }
+
+    #mainPics {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #mainMiddle {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 30% 1fr;
+    }
+
+
+
+    #middle-pic-wrapper1 {
+        left: 140px;
+        top: 0px;
+        width: 40%;
+    }
+
+    #middle-pic-wrapper2 {
+        top: 100px;
+        left: 330px;
+        width: 40%;
+    }
+
+    #middle-pic-wrapper3 {
+        top: 210px;
+        width: 40%;
+        left: 140px;
+    }
+
+
+
+    #middleText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+        text-align: center;
+        grid-row: 2;
+    }
+
+    #middleStatistic {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1rem;
+        grid-row: 3;
+    }
+
+
+}
+
+@media(max-width:480px) {
+
+    #mainMiddle {
+        grid-template-rows: 41% 30% 1fr;
+        height: 760px;
+    }
+
+    #middle-pic-wrapper1 {
+        left: 80px;
+        top: 30px;
+        width: 40%;
+    }
+
+    #middle-pic-wrapper2 {
+        top: 110px;
+        left: 200px;
+        width: 40%;
+    }
+
+    #middle-pic-wrapper3 {
+        top: 190px;
+        width: 40%;
+        left: 80px;
+    }
+
+
+
+    #middleText {
+
+        font-size: 1rem;
+        grid-row: 2;
+    }
+
+    #middleStatistic {
+
+
+        font-size: 0.8rem;
+        grid-row: 3;
+    }
+
+}
