@@ -22,11 +22,11 @@ function Hero() {
             <img src={Dumbel} />
             <div id="navbar" className={isOpenNavbar ? "open" : ""}>
 
-                <Link className="endPoints" to={"/plans"}>Plans</Link>
-                <Link className="endPoints" to={"/about"}>About</Link>
-                <Link className="endPoints" to={"/contact"}>Contact</Link>
-                <Link className="endPoints" to={"/reviews"}>Reviews</Link>
-                <Link className="brandName" to={"/"}>My Gym</Link>
+                <a className="endPoints" href="#mainPlans">Plans</a>
+                <a className="endPoints" >About</a>
+                <a className="endPoints" >Contact</a>
+                <a className="endPoints" >Reviews</a>
+                <a className="brandName" href="#hero" >My Gym</a>
             </div>
             <div id="heroText">
                 <h1>"Where strength meets <span>discipline</span>"</h1>

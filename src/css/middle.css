@@ -233,21 +233,21 @@
     }
 
     #middle-pic-wrapper1 {
-        left: 80px;
+        left: 70px;
         top: 30px;
-        width: 40%;
+        width: 45%;
     }
 
     #middle-pic-wrapper2 {
         top: 110px;
-        left: 200px;
-        width: 40%;
+        left: 190px;
+        width: 45%;
     }
 
     #middle-pic-wrapper3 {
         top: 190px;
-        width: 40%;
-        left: 80px;
+        width: 45%;
+        left: 70px;
     }
 
 
@@ -259,10 +259,29 @@
     }
 
     #middleStatistic {
+        height: 110px;
 
 
         font-size: 0.8rem;
         grid-row: 3;
+    }
+
+    #stat1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #stat2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #stat3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

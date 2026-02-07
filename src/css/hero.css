@@ -106,6 +106,7 @@
     justify-content: left;
     gap: 40px;
     font-size: 1rem;
+
 }
 
 
@@ -173,6 +174,7 @@
     }
 
     #navbar {
+        position: fixed;
         border-top: 2px solid grey;
         top: 71px;
         width: 100%;
