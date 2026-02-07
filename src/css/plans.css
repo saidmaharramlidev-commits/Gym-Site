@@ -100,6 +100,7 @@
     gap: 40px;
     font-size: 1rem;
 
+
 }
 
 .planBtn button:hover {
@@ -114,6 +115,11 @@
 
 
 }
+
+#arrow {
+    transition: 0.7s;
+}
+
 
 @media (max-width:1024px) {
     #planContainer {

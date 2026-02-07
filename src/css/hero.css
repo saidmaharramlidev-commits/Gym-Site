@@ -118,6 +118,7 @@
     color: white;
     display: flex;
     align-items: center;
+    transition: 0.7s;
     justify-content: center;
 }
 
@@ -244,11 +245,11 @@
     }
 
     #hero {
-        height: 530px;
+        height: 550px;
     }
 
     #hero img {
-        height: 500px;
+        height: 100%;
     }
 
     #heroText {

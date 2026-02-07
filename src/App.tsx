@@ -6,6 +6,7 @@ import "./css/middle.css"
 import Middle from './components/Middle'
 import Plans from './components/Plans'
 import "./css/plans.css"
+import About from './components/About'
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Middle />
       <Plans />
+      <About />
     </>
   )
 }

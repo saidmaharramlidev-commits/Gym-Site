@@ -23,7 +23,7 @@ function Hero() {
             <div id="navbar" className={isOpenNavbar ? "open" : ""}>
 
                 <a className="endPoints" href="#mainPlans">Plans</a>
-                <a className="endPoints" >About</a>
+                <a className="endPoints" href="#mainAbout" >About</a>
                 <a className="endPoints" >Contact</a>
                 <a className="endPoints" >Reviews</a>
                 <a className="brandName" href="#hero" >My Gym</a>
