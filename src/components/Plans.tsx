@@ -21,6 +21,9 @@ function Plans() {
                         <li>Locker room access</li>
                         <li>Fixed hours (daytime)</li>
                     </div>
+                    <div className="price">
+                        <span>-- 30$ --</span>
+                    </div>
                     <div className="planBtn">
                         <button>
                             Get in touch
@@ -43,6 +46,9 @@ function Plans() {
                         <li>Monthly progress check</li>
                         <li>Flexible hours</li>
                     </div>
+                    <div className="price">
+                        <span>-- 60$ --</span>
+                    </div>
                     <div className="planBtn">
                         <button>
                             Get in touch
@@ -64,6 +70,9 @@ function Plans() {
                         <li>Dedicated personal trainer</li>
                         <li>Nutrition guidance</li>
                         <li>24/7 unlimited access</li>
+                    </div>
+                    <div className="price">
+                        <span>-- 100$ --</span>
                     </div>
                     <div className="planBtn">
                         <button>

@@ -32,15 +32,14 @@
 
 .plan {
     width: 30%;
-    height: 570px;
     background-color: #121212;
     border-radius: 10px;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 .plan:hover {
     transform: scale(1.02);
-    transition: 0.6s;
+    transition: 0.4s;
     cursor: pointer;
 }
 
@@ -66,12 +65,12 @@
 
 
 #elementsOfPlan-wrapper {
-    height: 248px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    height: 220px;
 }
 
 #elementsOfPlan-wrapper li {
@@ -80,7 +79,26 @@
     color: silver;
 }
 
+.price {
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #D4AF37;
+    font-size: 2.1rem;
+}
 
+
+
+
+
+
+
+
+
+
+
+/*================================================================================*/
 .planBtn {
     width: 100%;
     display: flex;
@@ -129,6 +147,7 @@
 
     .plan {
         width: 50%;
+        padding-bottom: 20px;
     }
 }
 
