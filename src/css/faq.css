@@ -34,4 +34,8 @@
     #headerOfFaq {
         font-size: 1.7rem;
     }
+
+    #mainAccordion {
+        width: 90%;
+    }
 }

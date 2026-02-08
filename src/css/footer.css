@@ -135,11 +135,11 @@
 
 @media(max-width:480px) {
     #headerOfFooter h1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     #headerOfFooter h3 {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     #socialMedia {
@@ -147,7 +147,7 @@
     }
 
     .mediaLink {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     #footerText {
