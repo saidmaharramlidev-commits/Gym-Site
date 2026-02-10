@@ -1,11 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 
 export interface CounterState {
     isOpenNavbar: boolean,
+    formSucces: boolean
 }
 
 const initialState: CounterState = {
-    isOpenNavbar: false
+    isOpenNavbar: false,
+    formSucces: false
 }
 
 export const counterSlice = createSlice({
@@ -15,10 +17,14 @@ export const counterSlice = createSlice({
     reducers: {
         setNavbar: (state) => {
             state.isOpenNavbar = !state.isOpenNavbar
+        },
+        setSuccess: (state, action: PayloadAction<boolean>) => {
+            state.formSucces = action.payload
+
         }
     }
 })
 
-export const { setNavbar } = counterSlice.actions
+export const { setNavbar, setSuccess } = counterSlice.actions
 
 export default counterSlice.reducer

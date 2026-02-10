@@ -1,11 +1,36 @@
+import { useNavigate } from "react-router-dom";
 import planPic1 from "../assets/planPic1.jpg"
 import planPic2 from "../assets/planPic3.webp"
 import planPic3 from "../assets/planPic4.jpg"
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import { useEffect } from "react";
 
 
 
 function Plans() {
+
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        const plans = document.getElementById("planContainer");
+
+
+        let observerPlan = new IntersectionObserver(([entry]) => {
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add("slideBottomToTop");
+            observerPlan.unobserve(entry.target);
+        });
+
+        if (plans) {
+            observerPlan.observe(plans);
+        }
+
+        return () => observerPlan.disconnect();
+    }, []);
+
+
+
     return (
         <div id="mainPlans">
             <h1 id="headerOfPlans">Membership Plans</h1>
@@ -25,7 +50,7 @@ function Plans() {
                         <span>-- 30$ --</span>
                     </div>
                     <div className="planBtn">
-                        <button>
+                        <button onClick={() => navigate("contact")}>
                             Get in touch
                             <div id="arrow">
                                 <ArrowOutwardIcon />
@@ -50,7 +75,7 @@ function Plans() {
                         <span>-- 60$ --</span>
                     </div>
                     <div className="planBtn">
-                        <button>
+                        <button onClick={() => navigate("contact")}>
                             Get in touch
                             <div id="arrow">
                                 <ArrowOutwardIcon />
@@ -75,7 +100,7 @@ function Plans() {
                         <span>-- 100$ --</span>
                     </div>
                     <div className="planBtn">
-                        <button>
+                        <button onClick={() => navigate("contact")}>
                             Get in touch
                             <div id="arrow">
                                 <ArrowOutwardIcon />

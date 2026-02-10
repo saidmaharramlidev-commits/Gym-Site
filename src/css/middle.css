@@ -141,8 +141,10 @@
 }
 
 .slideBottomToTop {
-    animation: SlideBottomToTop 2s forwards;
+    animation: SlideBottomToTop 1.7s backwards;
 }
+
+
 
 
 /*------------------------------------------------------------------------------------*/

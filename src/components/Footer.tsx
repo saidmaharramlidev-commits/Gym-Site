@@ -4,10 +4,14 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import { useNavigate } from "react-router-dom";
 
 
 
 function Footer() {
+
+
+    const navigate = useNavigate()
     return (
         <div id="mainFooter">
             <img src={footerPic} />
@@ -15,7 +19,7 @@ function Footer() {
                 <h1 >Ready to unlock your potential?</h1>
                 <h3 style={{ color: "silver" }}>Train smarter. Get stronger. Stay ahead.</h3>
                 <div id="footer-cta">
-                    <button >
+                    <button onClick={() => navigate("contact")} >
                         <div id="footerArrow">
                             <NorthWestIcon />
                         </div>
